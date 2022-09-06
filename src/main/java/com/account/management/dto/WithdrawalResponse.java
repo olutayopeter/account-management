@@ -8,18 +8,9 @@ import java.math.BigDecimal;
 
 @Data
 @Builder
-public class AccountDetailResponse {
+public class WithdrawalResponse {
 
-
-    private Long id;
-
-    private String name;
-
-    private String phone;
-
-    private String accountNumber;
+    private BigDecimal withdrawalAmount;
 
     private BigDecimal totalBalance;
-
-
 }
