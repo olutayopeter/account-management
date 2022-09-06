@@ -1,0 +1,661 @@
+{
+	"info": {
+		"_postman_id": "a48afc22-bb3b-4735-b7a2-b604e38ad024",
+		"name": "account-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3227660"
+	},
+	"item": [
+		{
+			"name": "accountCreation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"accountCreationRequest\": {\r\n    \"name\": \"paul\",\r\n    \"phone\": \"07050311646\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"account"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "accountCreation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountCreationRequest\": {\r\n    \"name\": \"paul\",\r\n    \"phone\": \"07050311646\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"account"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 19:56:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accountNumber\": \"3366983668\"\n}"
+				}
+			]
+		},
+		{
+			"name": "deposit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"depositRequest\": {\r\n        \"accountNumber\": \"3366983668\",\r\n        \"amount\": \"150.00\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/deposit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"deposit"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deposit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"depositRequest\": {\r\n        \"accountNumber\": \"6839419421\",\r\n        \"amount\": \"350.00\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/deposit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"deposit"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 19:45:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"depositAmount\": 350,\n    \"totalBalance\": 350\n}"
+				},
+				{
+					"name": "deposit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"depositRequest\": {\r\n        \"accountNumber\": \"6839419421\",\r\n        \"amount\": \"250.00\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/deposit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"deposit"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 19:45:45 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"depositAmount\": 250,\n    \"totalBalance\": 600\n}"
+				},
+				{
+					"name": "deposit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"depositRequest\": {\r\n        \"accountNumber\": \"3366983668\",\r\n        \"amount\": \"1250.00\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/deposit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"deposit"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 19:56:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"depositAmount\": 1250,\n    \"totalBalance\": 1250\n}"
+				},
+				{
+					"name": "deposit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"depositRequest\": {\r\n        \"accountNumber\": \"3366983668\",\r\n        \"amount\": \"150.00\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/deposit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"deposit"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 19:57:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"depositAmount\": 150,\n    \"totalBalance\": 1400\n}"
+				}
+			]
+		},
+		{
+			"name": "withdrawal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"withdrawalRequest\": {\r\n        \"accountNumber\": \"3366983668\",\r\n        \"withdrawalAmount\": 200.00\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/withdrawal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"withdrawal"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "withdrawal",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"withdrawalRequest\": {\r\n        \"accountNumber\": \"6839419421\",\r\n        \"withdrawalAmount\": 100.00\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/withdrawal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"withdrawal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 19:46:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"withdrawalAmount\": 100,\n    \"totalBalance\": 400\n}"
+				},
+				{
+					"name": "withdrawal",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"withdrawalRequest\": {\r\n        \"accountNumber\": \"3366983668\",\r\n        \"withdrawalAmount\": 200.00\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/withdrawal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"withdrawal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 19:58:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"withdrawalAmount\": 200,\n    \"totalBalance\": 1200\n}"
+				}
+			]
+		},
+		{
+			"name": "transaction-details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/transaction/sort",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"transaction",
+						"sort"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "transaction-details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"transaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 19:47:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"peter\",\n        \"phone\": \"07050300646\",\n        \"accountNumber\": \"6839419421\",\n        \"totalBalance\": 350,\n        \"depositAmount\": 350,\n        \"withdrawalAmount\": null,\n        \"createdAt\": \"2022-09-04T19:45:22.288630800Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 2,\n        \"name\": \"peter\",\n        \"phone\": \"07050300646\",\n        \"accountNumber\": \"6839419421\",\n        \"totalBalance\": 600,\n        \"depositAmount\": 250,\n        \"withdrawalAmount\": null,\n        \"createdAt\": \"2022-09-04T19:45:44.300008100Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 3,\n        \"name\": \"peter\",\n        \"phone\": \"07050300646\",\n        \"accountNumber\": \"6839419421\",\n        \"totalBalance\": 500,\n        \"depositAmount\": null,\n        \"withdrawalAmount\": 100,\n        \"createdAt\": \"2022-09-04T19:46:05.306559100Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 4,\n        \"name\": \"peter\",\n        \"phone\": \"07050300646\",\n        \"accountNumber\": \"6839419421\",\n        \"totalBalance\": 500,\n        \"depositAmount\": null,\n        \"withdrawalAmount\": 100,\n        \"createdAt\": \"2022-09-04T19:46:05.315557200Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 5,\n        \"name\": \"peter\",\n        \"phone\": \"07050300646\",\n        \"accountNumber\": \"6839419421\",\n        \"totalBalance\": 400,\n        \"depositAmount\": null,\n        \"withdrawalAmount\": 100,\n        \"createdAt\": \"2022-09-04T19:46:09.951210600Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 6,\n        \"name\": \"peter\",\n        \"phone\": \"07050300646\",\n        \"accountNumber\": \"6839419421\",\n        \"totalBalance\": 400,\n        \"depositAmount\": null,\n        \"withdrawalAmount\": 100,\n        \"createdAt\": \"2022-09-04T19:46:09.957260400Z\",\n        \"version\": 0\n    }\n]"
+				},
+				{
+					"name": "transaction-details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/transaction/3366983668",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"transaction",
+								"3366983668"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 19:58:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"paul\",\n        \"phone\": \"07050311646\",\n        \"accountNumber\": \"3366983668\",\n        \"totalBalance\": 1250,\n        \"depositAmount\": 1250,\n        \"withdrawalAmount\": null,\n        \"createdAt\": \"2022-09-04T19:56:54.970084300Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 2,\n        \"name\": \"paul\",\n        \"phone\": \"07050311646\",\n        \"accountNumber\": \"3366983668\",\n        \"totalBalance\": 1400,\n        \"depositAmount\": 150,\n        \"withdrawalAmount\": null,\n        \"createdAt\": \"2022-09-04T19:57:19.492537800Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 3,\n        \"name\": \"paul\",\n        \"phone\": \"07050311646\",\n        \"accountNumber\": \"3366983668\",\n        \"totalBalance\": 1200,\n        \"depositAmount\": null,\n        \"withdrawalAmount\": 200,\n        \"createdAt\": \"2022-09-04T19:58:12.380947500Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 4,\n        \"name\": \"paul\",\n        \"phone\": \"07050311646\",\n        \"accountNumber\": \"3366983668\",\n        \"totalBalance\": 1200,\n        \"depositAmount\": null,\n        \"withdrawalAmount\": 200,\n        \"createdAt\": \"2022-09-04T19:58:12.388968800Z\",\n        \"version\": 0\n    }\n]"
+				},
+				{
+					"name": "transaction-details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/transaction/sort",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"transaction",
+								"sort"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 20:39:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"name\": \"paul\",\n        \"phone\": \"07050311646\",\n        \"accountNumber\": \"3567039842\",\n        \"totalBalance\": 1268,\n        \"depositAmount\": 234,\n        \"withdrawalAmount\": null,\n        \"createdAt\": \"2022-09-04T20:39:08.532213600Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 3,\n        \"name\": \"paul\",\n        \"phone\": \"07050311646\",\n        \"accountNumber\": \"3567039842\",\n        \"totalBalance\": 1034,\n        \"depositAmount\": 734,\n        \"withdrawalAmount\": null,\n        \"createdAt\": \"2022-09-04T20:39:00.684559200Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 2,\n        \"name\": \"paul\",\n        \"phone\": \"07050311646\",\n        \"accountNumber\": \"3567039842\",\n        \"totalBalance\": 300,\n        \"depositAmount\": 150,\n        \"withdrawalAmount\": null,\n        \"createdAt\": \"2022-09-04T20:38:52.145166300Z\",\n        \"version\": 0\n    },\n    {\n        \"id\": 1,\n        \"name\": \"paul\",\n        \"phone\": \"07050311646\",\n        \"accountNumber\": \"3567039842\",\n        \"totalBalance\": 150,\n        \"depositAmount\": 150,\n        \"withdrawalAmount\": null,\n        \"createdAt\": \"2022-09-04T20:38:48.840775800Z\",\n        \"version\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}
